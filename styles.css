@@ -36,11 +36,50 @@ p{
     font-weight: bold;
 }
 
+/* Cores */
+/*
 .brands{
     font-size: 20pt;
     font-weight: bold;
     /* color: #9BB09F; */
     /* color: #614EA2; */
-    color: rgb(205, 71, 102);
-    background-color: #F70;
+    /* color: rgb(205, 71, 102); */
+    /* background-color: #F70; */
+/* } */
+
+/* Background */
+
+body{
+    background-color: black;
+    background-image: url(wp3.jpg);
+    background-size: 2000px 1000px;
+    background-repeat: no-repeat;
+    /* background-position: top; */
+    /* o attachment configura o background em relação ao conteudo, ou seja, se a pagina rolar, e tiver em fixed, o conteudo
+    rola e a imagem fica fixa */
+    background-attachment: fixed;
+
 }
+
+#p1, #p2, #p3{
+    /* border: 10px solid #FFF; */
+    border: 10px dotted #FFF; 
+    /* padding é a margem interna, entre o conteudo e a borda */
+    padding: 35px;
+    /* background-color: gray; */
+    background-image: url(wp2.jpg);
+}
+
+/* o background-clip é o corte de onde começa a atuar todo o background, por padrao (border-box) preenche a caixa inteira */
+#p1{
+    background-clip: border-box;
+}
+
+#p2{
+    background-clip: padding-box;
+}
+
+#p3{
+    background-clip: content-box;
+}
+
