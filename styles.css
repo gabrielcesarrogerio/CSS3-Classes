@@ -1,0 +1,46 @@
+/* Seletor Tag (h1, span, p, a) */
+
+h1{
+    color: red;
+}
+
+p{
+    color: red;
+    font-size: 20pt;
+}
+
+/* Seletor id (tem prioridade sobre a tag) */
+
+#p1{
+    color: green;
+}
+
+#p2{
+    color: deepskyblue;
+}
+
+#p3{
+    color: yellowgreen;
+}
+
+/* Seletor Class */
+
+.txt{
+    color: tomato;
+    font-size: 20pt;
+}
+
+/* Seletores multiplos */
+
+#p1, #p2, #p3{
+    font-weight: bold;
+}
+
+.brands{
+    font-size: 20pt;
+    font-weight: bold;
+    /* color: #9BB09F; */
+    /* color: #614EA2; */
+    color: rgb(205, 71, 102);
+    background-color: #F70;
+}
