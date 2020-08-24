@@ -52,12 +52,18 @@ p{
 body{
     background-color: black;
     background-image: url(wp3.jpg);
-    background-size: 2000px 1000px;
+    background-size: 2000px 1000px; 
+    /* quando voce coloca 100%, ele não estica a imagem e tenta coloca-la como ela é em 100% de tela,
+    caso a altura nao preencha 100% e a largura sim, o fundo restante fica branco */
+    /* background-size: 100%; */
     background-repeat: no-repeat;
     /* background-position: top; */
     /* o attachment configura o background em relação ao conteudo, ou seja, se a pagina rolar, e tiver em fixed, o conteudo
     rola e a imagem fica fixa */
     background-attachment: fixed;
+    /* metapropriedade Background, usar só o background e atribuir caracteristicas */
+    /* background: black url(wp3.jpg) no-repeat 0px 0px / 2000px 1000px;  */
+    /* o 0px 0px são as posições (position), poderia ser center, ou em pixels, onde o primeiro é a esquerda, o outro é a direita */
 
 }
 
@@ -82,4 +88,47 @@ body{
 #p3{
     background-clip: content-box;
 }
+
+/* Border/Metapropriedade Border */
+
+#d1,#d2,#d3{
+    display: inline-flex;
+}
+
+#d1{
+    width: 250px;
+    height: 250px;
+    background-color: #FFF;
+    border-style: solid;
+    /* solid, dotted, dashed(tracejada), double(linhas duplas), groove (tipo 3d, quadro), ridge (cores contrarias do groove)
+    inset(baixo relevo), outset(alto relevo), none(sem bordas, padrao), hidden(oculta) */
+    border-width: 20px;
+    border-color: lawngreen;
+}
+
+#d2{
+    width: 250px;
+    height: 250px;
+    background-color: lightskyblue;
+    border: yellow solid 20px;
+
+}
+
+#d3{
+    width: 250px;
+    height: 250px;
+    background-color: whitesmoke;
+    background-image: url(wp4.png);
+    background-position: center;
+    padding: 70px 45px;
+    border-top: black inset 20px;
+    border-bottom: whitesmoke outset 20px;
+    border-right: cornflowerblue groove 20px;
+    border-left: cornflowerblue ridge 20px;
+   
+    border-radius: 20px 20px 80px 80px; 
+    /* funciona em sentido horario a partir da borda superior esquerda */
+
+}
+
 
