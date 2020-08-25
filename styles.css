@@ -91,26 +91,28 @@ body{
 
 /* Border/Metapropriedade Border */
 
-#d1,#d2,#d3{
+#d1,#d2,#d3,#d4{
     display: inline-flex;
 }
 
 #d1{
     width: 250px;
     height: 250px;
+    padding: 70px 45px;
     background-color: #FFF;
-    border-style: solid;
+    border-style: groove;
     /* solid, dotted, dashed(tracejada), double(linhas duplas), groove (tipo 3d, quadro), ridge (cores contrarias do groove)
     inset(baixo relevo), outset(alto relevo), none(sem bordas, padrao), hidden(oculta) */
     border-width: 20px;
-    border-color: lawngreen;
+    border-color: lime ;
 }
 
 #d2{
     width: 250px;
     height: 250px;
+    padding: 70px 45px;
     background-color: lightskyblue;
-    border: yellow solid 20px;
+    border: yellow double 20px;
 
 }
 
@@ -129,6 +131,11 @@ body{
     border-radius: 20px 20px 80px 80px; 
     /* funciona em sentido horario a partir da borda superior esquerda */
 
+}
+
+#d4{
+    border: 30px solid;
+    border-image: url(borda.jpg);
 }
 
 
